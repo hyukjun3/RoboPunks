@@ -4,7 +4,7 @@ async function main() {
   const RoboPunksNFT = await hre.ethers.getContractFactory("RoboPunksNFT");
   const roboPunksNFT = await RoboPunksNFT.deploy();
 
-  console.log("RoboPunksNFT deployed to:", roboPunksNFT.address);
+  console.log("RoboPunksNFT deployed to:", await roboPunksNFT.getAddress());
 }
 
 main()
